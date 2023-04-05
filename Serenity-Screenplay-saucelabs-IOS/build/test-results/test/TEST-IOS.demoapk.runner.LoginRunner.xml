@@ -2,9 +2,211 @@
 <testsuite name="IOS.demoapk.runner.LoginRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-7C2GORMF" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-3m47,393s
+?[31mFailed scenarios:?[0m
+file:///C:/Users/rolin/Sofka%20U/Appium-Screenplay--IOS/Serenity-Screenplay-saucelabs-IOS/src/test/resources/features/login.feature:4 # Login with valid credentials
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m)
+0m14,547s
+
+
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: There is no device that matches your criteria. DesiredCapabilities: {"capabilities":{"firstMatch":[{"appium:deviceOrientation":"portrait","appium:deviceName":"iPhone.*","platformName":"ios","appium:automationName":"XCUITest","appium:app":"storage:filename\u003dsauceDemo.ipa","sauce:options":{"name":"\u003cyour test name\u003e","build":"appium-build-GY757"}}]}}
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Sauce Labs RDC', ip: 'N/A', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.161+', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Command duration or timeout: 1.68 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7C2GORMF', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:90)
+	at IOS.demoapk.driver.IOSDriver.configureDriver(IOSDriver.java:33)
+	at IOS.demoapk.stepdefinitions.LoginStepsDefinitions.userWantsToBuySomeClothes(LoginStepsDefinitions.java:20)
+	at ?.User wants to buy some clothes(file:///C:/Users/rolin/Sofka%20U/Appium-Screenplay--IOS/Serenity-Screenplay-saucelabs-IOS/src/test/resources/features/login.feature:5)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:90)
+	at IOS.demoapk.driver.IOSDriver.configureDriver(IOSDriver.java:33)
+	at IOS.demoapk.stepdefinitions.LoginStepsDefinitions.userWantsToBuySomeClothes(LoginStepsDefinitions.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:286)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.SessionNotCreatedException: There is no device that matches your criteria. DesiredCapabilities: {"capabilities":{"firstMatch":[{"appium:deviceOrientation":"portrait","appium:deviceName":"iPhone.*","platformName":"ios","appium:automationName":"XCUITest","appium:app":"storage:filename\u003dsauceDemo.ipa","sauce:options":{"name":"\u003cyour test name\u003e","build":"appium-build-GY757"}}]}}
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Sauce Labs RDC', ip: 'N/A', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.161+', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Command duration or timeout: 1.68 seconds
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 86 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: There is no device that matches your criteria. DesiredCapabilities: {"capabilities":{"firstMatch":[{"appium:deviceOrientation":"portrait","appium:deviceName":"iPhone.*","platformName":"ios","appium:automationName":"XCUITest","appium:app":"storage:filename\u003dsauceDemo.ipa","sauce:options":{"name":"\u003cyour test name\u003e","build":"appium-build-GY757"}}]}}
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Sauce Labs RDC', ip: 'N/A', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.161+', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7C2GORMF', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: unknown
+
+java.lang.IllegalArgumentException: The class org.openqa.selenium.firefox.FirefoxDriver of the given context doesn't implement io.appium.java_client.FindsByAccessibilityId nor io.appium.java_client.FindsByFluentSelector. Sorry. It is impossible to find something.
+	at io.appium.java_client.MobileBy.formIllegalArgumentException(MobileBy.java:41)
+	at io.appium.java_client.MobileBy.access$0(MobileBy.java:39)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:291)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:231)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:226)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.elementIsPresent(WebElementFacadeImpl.java:1006)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.isPresent(WebElementFacadeImpl.java:1028)
+	at net.serenitybdd.core.pages.WebElementExpectations$2.apply(WebElementExpectations.java:43)
+	at net.serenitybdd.core.pages.WebElementExpectations$2.apply(WebElementExpectations.java:35)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1076)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:997)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1275)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$dtKG0Fh2.performAs$accessor$qs7h8PU8(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$dtKG0Fh2.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:261)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:187)
+	at IOS.demoapk.tasks.LogOut.performAs(LogOut.java:14)
+	at IOS.demoapk.tasks.LogOut$ByteBuddy$BNQJAakE.performAs$accessor$Jbm48I6I(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at IOS.demoapk.tasks.LogOut$ByteBuddy$BNQJAakE.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:261)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:187)
+	at IOS.demoapk.stepdefinitions.ParameterDefinitions.logOut(ParameterDefinitions.java:32)
 
 
 ]]></system-out>
@@ -25,9 +227,9 @@
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
 
-[Test worker] INFO  - Test Suite Started: Login saucelabs app
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ca0b9b1: Generating report for test outcome: Login saucelabs app:Login with valid credentials
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@68d8ae27: Generating report for test outcome: Login saucelabs app:Login with valid credentials
+[Test worker] INFO  - Test Suite Started: Login saucelabs ap
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@53ab0bfe: Generating report for test outcome: Login saucelabs ap:Login with valid credentials
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3754a445: Generating report for test outcome: Login saucelabs ap:Login with valid credentials
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/rolin/Sofka%20U/Appium-Screenplay--IOS/Serenity-Screenplay-saucelabs-IOS/src/test/resources/features/login.feature
 ]]></system-err>
 </testsuite>

@@ -1,5 +1,5 @@
 #language: en
-  Feature: Login saucelabs app
+  Feature: Login saucelabs ap
 
     Scenario: Login with valid credentials
       Given User wants to buy some clothes

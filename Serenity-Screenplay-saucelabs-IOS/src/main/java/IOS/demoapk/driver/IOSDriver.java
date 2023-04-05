@@ -26,12 +26,13 @@ public class IOSDriver {
             caps.setCapability("appium:automationName", "XCUITest");
             caps.setCapability("appium:app", "storage:filename=sauceDemo.ipa");
             MutableCapabilities sauceOptions = new MutableCapabilities();
-            sauceOptions.setCapability("build", "appium-build-OP7YL");
-            sauceOptions.setCapability("name", "your test name");
+            sauceOptions.setCapability("build", "appium-build-GY757");
+            sauceOptions.setCapability("name", "<your test name>");
             caps.setCapability("sauce:options", sauceOptions);
-
-            URL url = new URL("https://oauth-efsolora-240a4:cf284a50-2259-4fde-8bee-92dde8eb9ee0@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+            URL url = new URL("https://oauth-crigaviria12345-ce0db:3bd1b3d8-f424-4dd3-a834-49aaa236dfe2@ondemand.us-west-1.saucelabs.com:443/wd/hub");
             driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>(url, caps);
+
+
 
         }catch (MalformedURLException e){
             e.printStackTrace();

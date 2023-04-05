@@ -1,5 +1,4 @@
 package IOS.demoapk.stepdefinitions;
-
 import IOS.demoapk.driver.IOSDriver;
 import IOS.demoapk.questions.TextQuestion;
 import IOS.demoapk.tasks.LoginOnDemoApp;
@@ -18,7 +17,7 @@ public class LoginStepsDefinitions {
 
     @Given("{actor} wants to buy some clothes")
     public void userWantsToBuySomeClothes(Actor actor) throws MalformedURLException {
-        actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));
+      actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));
     }
 
     @When("{actor} introduce the valid credentials {word} {word}")
